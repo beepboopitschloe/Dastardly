@@ -1,0 +1,10 @@
+PLAYER
+Player
+human
+400
+The Lair
+PLACES
+The Lair
+The Delight
+Bullseye Department Store
+Ben's Gun Shop

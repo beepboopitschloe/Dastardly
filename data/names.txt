@@ -1,0 +1,51 @@
+name "male" {
+	syllablesStart = "Andrew, Bill, Cedric, David, Erik, Frederick, Gary, Harry, Isaac, Jared, Kelsie, Lawrence, Matthew, Noah, Percy, Quincy, Rupert, Samuel, Terrence, Ulrich, Victor, Walter, Xander, Yul, Zachary"
+	syllablesEnd = "Anderson, Adams, Bennett, Callahan, Coolidge, Doyle, Ericson, Frederickson, Garrison, Grayson, Harrison, Humphrey, Hoover, Irving, Irsfield, Jackson, Johnson, Johanson, James, Kelsie, Lombard, Muth, Mathson, Norton, Orwell, O'Claire, O'Donnell, O'Riley, Parson, Quail, Quincy, Red, Samson, Thomas, Umbridge, Vector, Wilson, Xeria, Yolanda, Zed"
+	rules = "$s_$e"
+}
+
+name "female" {
+	syllablesStart = "Beth, Carrie, Callie, Catherine, Dani, Darla, Ellen, Elle, Eliza, Eloise, Faith, Gwen, Hallie, Isis, Jacqueline, Kaitlin, Katherine, Lisa, Maria, Mary Jane, Nina, Oriella, Penny, Quenby, Rina, Samantha, Theresa, Ursula, Victoria, Wynn, Xanthi, Yvana, Zoe"
+	syllablesEnd = "Anderson, Adams, Bennett, Callahan, Coolidge, Doyle, Ericson, Frederickson, Garrison, Grayson, Harrison, Humphrey, Hoover, Irving, Irsfield, Jackson, Johnson, Johanson, James, Kelsie, Lombard, Muth, Mathson, Norton, Orwell, O'Claire, O'Donnell, O'Riley, Parson, Quail, Quincy, Red, Samson, Thomas, Umbridge, Vector, Wilson, Xeria, Yolanda, Zed"
+	rules = "$s_$e"
+}
+
+name "shop_coffee" {
+	syllablesStart = "LAST"
+	syllablesMiddle = "Leaky, Chocolate, Creamy, Black, Indie, Hipster, Full"
+	syllablesEnd = "Mug, Roast, Bean, Spoon, Cup, Mocha, Latte, Pants"
+	rules = "$s_$50m_$e"
+}
+
+name "apts" {
+	syllablesStart = "LAST"
+	syllablesMiddle = "Apartments, Living, Spaces"
+	rules = "$s_$m"
+}
+
+name "museum" {
+	syllablesStart = "FIRSTLAST, LAST"
+	syllablesMiddle = "Memorial, History, Natural_History, Science, Art"
+	syllablesEnd = "Museum"
+	rules = "$s_$80m_$e"
+}
+
+name "bank" {
+	syllablesStart = "LAST"
+	syllablesMiddle = "Bank"
+	syllablesEnd = "of_America"
+	rules = "$s_$m_$50e"
+}
+
+name "hotel" {
+	syllablesStart = "LAST"
+	syllablesMiddle = "Hotel, Inn, Bed_and_Breakfast"
+	rules = "$s_$m"
+}
+
+name "bar" {
+	syllablesStart = "LAST"
+	syllablesMiddle = "'s"
+	syllablesEnd = "Tavern, Bar, Pub"
+	rules = "$s$m_$e"
+}

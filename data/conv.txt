@@ -1,0 +1,68 @@
+topic_struct "intro" {
+
+	phrase_struct "hello" {
+		phrase_text = "Hello!"
+		phrase_id = "intro:hello"
+		link_to_topic = "home"
+	}
+}
+
+topic_struct "home" {
+
+	phrase_struct "music" {
+		phrase_text = "Let's talk about music."
+		phrase_id = "home:music"
+		link_to_topic = "music"
+	}
+}
+
+topic_struct "music" {
+
+	phrase_struct "reggae" {
+		phrase_text = "What do you think of reggae?"
+		phrase_id = "music:reggae"
+	}
+
+	phrase_struct "metal" {
+		phrase_text = "What do you think of metal?"
+		phrase_id = "music:metal"
+	}
+
+	phrase_struct "band" {
+		phrase_text = "Are you in a band?"
+		phrase_id = "music:band"
+		link_to_topic = "band"
+	}
+}
+
+topic_struct "band" {
+}
+
+topic_struct "band_true" {
+
+	phrase_struct "members" {
+		phrase_text = "Who's in your band?"
+		phrase_id = "band_true:members"
+	}
+
+	phrase_struct "awesome" {
+		phrase_text = "That's awesome!"
+		phrase_id = "band_true:awesome"
+		abs_opinion_change = 3
+	}
+}
+
+topic_struct "band_false" {
+
+	phrase_struct "lame" {
+		phrase_text = "Well, that's pretty lame of you."
+		phrase_id = "band_false:lame"
+		abs_opinion_change = -5
+	}
+
+	phrase_struct "back" {
+		phrase_text = "Oh."
+		phrase_id = "band_false:back"
+		link_to_topic = "home"
+	}
+}

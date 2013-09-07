@@ -1,0 +1,7 @@
+WIDTH:
+40
+HEIGHT:
+19
+DOOR:
+6
+6

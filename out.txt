@@ -1,0 +1,204 @@
+new structure type body_type  named  human
+new structure type new_hub  named  torso
+new property named  size  type  INT  value  100
+new flag named  IMPORTANT
+end structure type new_hub  named  torso
+new structure type new_limb  named  head
+new property named  parent  type  STRING  value  torso
+head parent torso
+new property named  size  type  INT  value  30
+new flag named  IMPORTANT
+new flag named  VITAL
+end structure type new_limb  named  head
+new structure type new_limb  named  right upper arm
+new property named  parent  type  STRING  value  torso
+right upper arm parent torso
+new property named  size  type  INT  value  20
+end structure type new_limb  named  right upper arm
+new structure type new_limb  named  right lower arm
+new property named  parent  type  STRING  value  right upper arm
+right lower arm parent right upper arm
+new property named  size  type  INT  value  20
+end structure type new_limb  named  right lower arm
+new structure type new_limb  named  right hand
+new property named  parent  type  STRING  value  right lower arm
+right hand parent right lower arm
+new property named  size  type  INT  value  10
+new flag named  GRASPS
+new flag named  IMPORTANT
+end structure type new_limb  named  right hand
+new structure type new_limb  named  left upper arm
+new property named  parent  type  STRING  value  torso
+left upper arm parent torso
+new property named  size  type  INT  value  20
+end structure type new_limb  named  left upper arm
+new structure type new_limb  named  left lower arm
+new property named  parent  type  STRING  value  left upper arm
+left lower arm parent left upper arm
+new property named  size  type  INT  value  20
+end structure type new_limb  named  left lower arm
+new structure type new_limb  named  left hand
+new property named  parent  type  STRING  value  left lower arm
+left hand parent left lower arm
+new property named  size  type  INT  value  10
+new flag named  GRASPS
+new flag named  IMPORTANT
+end structure type new_limb  named  left hand
+new structure type new_limb  named  right upper leg
+new property named  parent  type  STRING  value  torso
+right upper leg parent torso
+new property named  size  type  INT  value  30
+end structure type new_limb  named  right upper leg
+new structure type new_limb  named  right lower leg
+new property named  parent  type  STRING  value  right upper leg
+right lower leg parent right upper leg
+new property named  size  type  INT  value  20
+end structure type new_limb  named  right lower leg
+new structure type new_limb  named  right foot
+new property named  parent  type  STRING  value  right lower leg
+right foot parent right lower leg
+new property named  size  type  INT  value  10
+new flag named  IMPORTANT
+end structure type new_limb  named  right foot
+new structure type new_limb  named  left upper leg
+new property named  parent  type  STRING  value  torso
+left upper leg parent torso
+new property named  size  type  INT  value  30
+end structure type new_limb  named  left upper leg
+new structure type new_limb  named  left lower leg
+new property named  parent  type  STRING  value  left upper leg
+left lower leg parent left upper leg
+new property named  size  type  INT  value  20
+end structure type new_limb  named  left lower leg
+new structure type new_limb  named  left foot
+new property named  parent  type  STRING  value  left lower leg
+left foot parent left lower leg
+new property named  size  type  INT  value  10
+new flag named  IMPORTANT
+end structure type new_limb  named  left foot
+end structure type body_type  named  human
+new structure type place_struct  named  home
+new property named  name  type  STRING  value  Your Home
+new property named  total_size  type  INT  value  20
+new property named  building_size  type  INT  value  10
+new property named  spawn_rate  type  INT  value  0
+new property named  floors  type  INT  value  3
+new property named  name_gen_list  type  STRING  value  none
+end structure type place_struct  named  home
+[]
+Your HomeF1_map
+Your HomeF2_map
+Your HomeF3_map
+new structure type place_struct  named  shop_coffee
+new property named  name  type  STRING  value  Tavern
+new property named  total_size  type  INT  value  30
+new property named  building_size  type  INT  value  20
+new property named  spawn_rate  type  INT  value  10
+new property named  floors  type  INT  value  1
+new property named  name_gen_list  type  STRING  value  shop_coffee
+new flag named  QUEUE
+new flag named  SHOP_COUNTER
+new flag named  SHOPKEEPER
+end structure type place_struct  named  shop_coffee
+['queue', 'shop_counter', 'shopkeeper']
+['shop_counter', 'shopkeeper', 'queue']
+trollface
+TavernF1_map
+doneskies.
+new structure type place_struct  named  apts
+new property named  name  type  STRING  value  Apartment Building
+new property named  total_size  type  INT  value  25
+new property named  building_size  type  INT  value  15
+new property named  spawn_rate  type  INT  value  3
+new property named  floors  type  INT  value  10
+new property named  name_gen_list  type  STRING  value  apts
+new flag named  STAIRWELL
+new flag named  LIVABLE
+end structure type place_struct  named  apts
+['stairwell', 'livable']
+Apartment BuildingF1_map
+Apartment BuildingF2_map
+Apartment BuildingF3_map
+Apartment BuildingF4_map
+Apartment BuildingF5_map
+Apartment BuildingF6_map
+Apartment BuildingF7_map
+Apartment BuildingF8_map
+Apartment BuildingF9_map
+Apartment BuildingF10_map
+new structure type place_struct  named  museum
+new property named  name  type  STRING  value  Museum
+new property named  total_size  type  INT  value  50
+new property named  building_size  type  INT  value  40
+new property named  spawn_rate  type  INT  value  15
+new property named  name_gen_list  type  STRING  value  museum
+end structure type place_struct  named  museum
+[]
+MuseumF1_map
+new structure type place_struct  named  bank
+new property named  name  type  STRING  value  Bak
+new property named  total_size  type  INT  value  40
+new property named  building_size  type  INT  value  30
+new property named  spawn_rate  type  INT  value  10
+new property named  name_gen_list  type  STRING  value  bank
+end structure type place_struct  named  bank
+[]
+BakF1_map
+new structure type place_struct  named  hotel
+new property named  name  type  STRING  value  Hotel
+new property named  total_size  type  INT  value  35
+new property named  building_size  type  INT  value  25
+new property named  spawn_rate  type  INT  value  15
+new property named  name_gen_list  type  STRING  value  hotel
+new flag named  STAIRWELL
+new flag named  LIVABLE
+end structure type place_struct  named  hotel
+['stairwell', 'livable']
+HotelF1_map
+new structure type place_struct  named  bar
+new property named  name  type  STRING  value  Bar
+new property named  total_size  type  INT  value  30
+new property named  building_size  type  INT  value  20
+new property named  spawn_rate  type  INT  value  8
+new property named  name_gen_list  type  STRING  value  bar
+end structure type place_struct  named  bar
+[]
+BarF1_map
+new structure type item_struct  named  pickaxe
+new property named  name  type  STRING  value  pickaxe
+new property named  char  type  STRING  value  /
+new property named  description  type  STRING  value  A dwarven mining tool. Strike the earth!
+new property named  damage_concentration  type  INT  value  3
+new property named  damage_reverb  type  INT  value  20
+new property named  weapon_skill  type  STRING  value  pickaxes
+end structure type item_struct  named  pickaxe
+{'phone': <__main__.Phone instance at 0x024E55F8>, 'pickaxe': <__main__.Item instance at 0x04D2AE68>}
+new structure type verb_struct  named  picks_up
+new flag named  POSSESSIVE
+new flag named  VISIBLE
+end structure type verb_struct  named  picks_up
+new structure type verb_struct  named  attacks
+new flag named  VIOLENT
+new flag named  VISIBLE
+end structure type verb_struct  named  attacks
+new structure type verb_struct  named  yields
+new flag named  VISIBLE
+end structure type verb_struct  named  yields
+new structure type verb_struct  named  enters
+new flag named  VISIBLE
+end structure type verb_struct  named  enters
+new structure type verb_struct  named  talks_to
+new flag named  SOCIAL
+new flag named  VISIBLE
+end structure type verb_struct  named  talks_to
+done.
+generating city...
+done.
+spawning a new body
+body spawned with name human
+Unnamed 20
+0 New Game
+spawning a new body
+body spawned with name human
+Unnamed 20
+male

@@ -1,0 +1,66 @@
+body_type "human" {
+	new_hub "torso" {
+		size = 100
+		IMPORTANT
+	}
+	new_limb "head" {
+		parent = "torso"
+		size = 30
+		IMPORTANT
+		VITAL
+	}
+	new_limb "right upper arm" {
+		parent = "torso"
+		size = 20
+	}
+	new_limb "right lower arm" {
+		parent = "right upper arm"
+		size = 20
+	}
+	new_limb "right hand" {
+		parent = "right lower arm"
+		size = 10
+		GRASPS
+		IMPORTANT
+	}
+	new_limb "left upper arm" {
+		parent = "torso"
+		size = 20
+	}
+	new_limb "left lower arm" {
+		parent = "left upper arm"
+		size = 20
+	}
+	new_limb "left hand" {
+		parent = "left lower arm"
+		size = 10
+		GRASPS
+		IMPORTANT
+	}
+	new_limb "right upper leg" {
+		parent = "torso"
+		size = 30
+	}
+	new_limb "right lower leg" {
+		parent = "right upper leg"
+		size = 20
+	}
+	new_limb "right foot" {
+		parent = "right lower leg"
+		size = 10
+		IMPORTANT
+	}
+	new_limb "left upper leg" {
+		parent = "torso"
+		size = 30
+	}
+	new_limb "left lower leg" {
+		parent = "left upper leg"
+		size = 20
+	}
+	new_limb "left foot" {
+		parent = "left lower leg"
+		size = 10
+		IMPORTANT
+	}
+}

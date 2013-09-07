@@ -1,0 +1,22 @@
+verb_struct "picks_up" {
+	POSSESSIVE
+	VISIBLE
+}
+
+verb_struct "attacks" {
+	VIOLENT
+	VISIBLE
+}
+
+verb_struct "yields" {
+	VISIBLE
+}
+
+verb_struct "enters" {
+	VISIBLE
+}
+
+verb_struct "talks_to" {
+	SOCIAL
+	VISIBLE
+}

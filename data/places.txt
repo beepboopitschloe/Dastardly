@@ -1,0 +1,65 @@
+place_struct "home" {
+	name = "Your Home"
+	total_size = 20
+	building_size = 10
+	spawn_rate = 0
+	floors = 3
+	name_gen_list = "none"
+}
+
+place_struct "shop_coffee" {
+	name = "Tavern"
+	total_size = 30
+	building_size = 20
+	spawn_rate = 10
+	floors = 1
+	name_gen_list = "shop_coffee"
+	QUEUE
+	SHOP_COUNTER
+	SHOPKEEPER
+}
+
+place_struct "apts" {
+	name = "Apartment Building"
+	total_size = 25
+	building_size = 15
+	spawn_rate = 3
+	floors = 10
+	name_gen_list = "apts"
+	STAIRWELL
+	LIVABLE
+}
+
+place_struct "museum" {
+	name = "Museum"
+	total_size = 50
+	building_size = 40
+	spawn_rate = 15
+	name_gen_list = "museum"
+}
+
+place_struct "bank" {
+	name = "Bak"
+	total_size = 40
+	building_size = 30
+	spawn_rate = 10
+	name_gen_list = "bank"
+}
+
+place_struct "hotel" {
+	name = "Hotel"
+	total_size = 35
+	building_size = 25
+	spawn_rate = 15
+	name_gen_list = "hotel"
+	STAIRWELL
+	LIVABLE
+}
+
+place_struct "bar" {
+	name = "Bar"
+	total_size = 30
+	building_size = 20
+	spawn_rate = 8
+	name_gen_list = "bar"
+}

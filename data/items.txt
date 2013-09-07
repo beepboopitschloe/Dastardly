@@ -1,0 +1,8 @@
+item_struct "pickaxe" {
+	name = "pickaxe"
+	char = "/"
+	description = "A dwarven mining tool. Strike the earth!"
+	damage_concentration = 3
+	damage_reverb = 20
+	weapon_skill = "pickaxes"
+}
