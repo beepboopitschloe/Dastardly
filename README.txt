@@ -1,9 +1,9 @@
 NOTE
 
 This is a very old project I worked on from 2009-2012. I uploaded it here as a
-curiosity and make no claims as to the quality of the code. I don't claim to know
+curiosity and freely admit that the code is terrible. I don't claim to know
 anything about Python today, and I certainly didn't know anything about it when
-I wrote this.
+I wrote this. Ye be warned.
 
 --------------------
 
